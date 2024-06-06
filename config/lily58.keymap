@@ -41,11 +41,11 @@
 
             display-name = "Lower";
             bindings = <
-&kp F11         &kp F1           &kp F2            &kp F3                &kp F4            &kp F5                               &kp F6         &kp F7             &kp F8                 &kp F9             &kp F10       &kp F12
-&kp GRAVE       &kp EXCLAMATION  &kp LS(AT)        &kp LS(POUND)         &kp LS(DLLR)      &kp LS(PRCNT)                        &kp LS(CARET)  &kp LS(AMPS)       &kp LS(STAR)           &kp LS(LPAR)       &kp LS(RPAR)  &kp F12
-&kp LCTRL       &kp EXCL         &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp EQUAL                            &kp PLUS       &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RPAR      &kp TILDE
-&kp LEFT_SHIFT  &kp              &kp               &kp                   &kp SINGLE_QUOTE  &kp            &kp LBKT    &kp RBKT  &kp MINUS      &kp DOUBLE_QUOTES  &kp PERIOD             &kp LBRC           &kp RBRC      &kp PIPE
-                                                   &kp                   &kp               &kp            &kp         &kp       &kp            &kp                &kp
+&kp F11         &kp F1           &kp F2            &kp F3                &kp F4            &kp F5                                 &kp F6         &kp F7             &kp F8                 &kp F9             &kp F10       &kp F12
+&kp CLCK        &kp EXCLAMATION  &kp LS(AT)        &kp LS(POUND)         &kp LS(DLLR)      &kp LS(PRCNT)                          &kp LS(CARET)  &kp LS(AMPS)       &kp LS(STAR)           &kp LS(LPAR)       &kp LS(RPAR)  &kp F12
+&kp LCTRL       &kp GRAVE        &kp SINGLE_QUOTE  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE    &kp EQUAL                              &kp PLUS       &kp RIGHT_BRACE    &kp RIGHT_PARENTHESIS  &kp DOUBLE_QUOTES  &kp RPAR      &kp TILDE
+&kp LEFT_SHIFT  &kp              &kp               &kp                   &kp SINGLE_QUOTE  &kp            &kp LBKT     &kp RBKT   &kp MINUS      &kp DOUBLE_QUOTES  &kp PERIOD             &kp LBRC           &kp RBRC      &kp PIPE
+                                                   &kp                   &kp               &mo 1          &kp SPACE    &kp ENTER  &kp DEL        &mo 2              &kp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -61,11 +61,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp F11    &kp     &kp     &kp      &kp      &kp                  &kp          &kp        &kp        &kp       &kp        &kp
-&kp GRAVE  &kp N1  &kp N2  &kp N3   &kp N4   &kp N5               &kp N6       &kp N7     &kp N8     &kp N9    &kp N0     &kp
-&kp F1     &kp F2  &kp F3  &kp F4   &kp F5   &kp F6               &kp          &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &kp
-&kp F7     &kp F8  &kp F9  &kp F10  &kp F11  &kp F12  &kp    &kp  &kp KP_PLUS  &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT   &kp BSLH
-                           &kp      &kp      &kp      &kp    &kp  &kp          &kp        &kp
+&kp F11         &kp     &kp     &kp       &kp      &kp                                &kp            &kp        &kp       &kp        &kp        &kp
+&kp GRAVE       &kp N1  &kp N2  &kp N3    &kp N4   &kp N5                             &kp N6         &kp N7     &kp UP    &kp N9     &kp N0     &kp
+&kp LCTRL       &kp F2  &kp F3  &kp HOME  &kp END  &kp PAGE_UP                        &kp PAGE_DOWN  &kp LEFT   &kp DOWN  &kp RIGHT  &kp RIGHT  &kp
+&kp LEFT_SHIFT  &kp F8  &kp F9  &kp F10   &kp F11  &kp F12      &kp          &kp      &kp KP_PLUS    &kp MINUS  &kp DOWN  &kp LBKT   &kp RBKT   &kp BSLH
+                                &kp       &kp      &mo 1        &kp SPACE    &kp RET  &kp DEL        &mo 2      &kp
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
