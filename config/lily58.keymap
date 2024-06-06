@@ -8,6 +8,22 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    macros {
+        scrshot_mac: screenshot_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp NUMBER_4>;
+            label = "SCREENSHOT_MAC";
+        };
+
+        rec_mac: rec_mac {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_COMMAND &kp LEFT_SHIFT &kp N5>;
+            label = "REC_MAC";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -61,11 +77,11 @@
 
             display-name = "Raise";
             bindings = <
-&none           &none  &none       &none        &none          &none                        &none    &none     &none     &none      &none  &none
-&none           &none  &none       &kp PAGE_UP  &kp PAGE_DOWN  &none                        &none    &none     &kp UP    &none      &none  &none
-&kp LCTRL       &none  &kp INSERT  &kp HOME     &kp END        &none                        &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&kp LEFT_SHIFT  &none  &none       &none        &none          &none  &none        &none    &none    &none     &kp DOWN  &none      &none  &none
-                                   &none        &none          &mo 1  &kp SPACE    &kp RET  &kp DEL  &mo 2     &none
+&none           &none  &none         &none        &none          &none                        &none    &none     &none     &none      &none  &none
+&none           &none  &scrshot_mac  &kp PAGE_UP  &kp PAGE_DOWN  &none                        &none    &none     &kp UP    &rec_mac   &none  &none
+&kp LCTRL       &none  &kp INSERT    &kp HOME     &kp END        &none                        &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
+&kp LEFT_SHIFT  &none  &none         &none        &none          &none  &none        &none    &none    &none     &kp DOWN  &none      &none  &none
+                                     &none        &none          &mo 1  &kp SPACE    &kp RET  &kp DEL  &mo 2     &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
