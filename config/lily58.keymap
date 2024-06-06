@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
 / {
@@ -77,11 +78,11 @@
 
             display-name = "Raise";
             bindings = <
-&none           &none  &none         &none        &none          &none                        &none    &none     &none     &none      &none  &none
-&none           &none  &scrshot_mac  &kp PAGE_UP  &kp PAGE_DOWN  &none                        &none    &none     &kp UP    &rec_mac   &none  &none
-&kp LCTRL       &none  &kp INSERT    &kp HOME     &kp END        &none                        &none    &kp LEFT  &kp DOWN  &kp RIGHT  &none  &none
-&kp LEFT_SHIFT  &none  &none         &none        &none          &none  &none        &none    &none    &none     &kp DOWN  &none      &none  &none
-                                     &none        &none          &mo 1  &kp SPACE    &kp RET  &kp DEL  &mo 2     &none
+&bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4   &none                        &bt BT_CLR  &bt BT_CLR_ALL  &none     &none      &bt BT_PRV  &bt BT_NXT
+&none           &none         &scrshot_mac  &kp PAGE_UP   &kp PAGE_DOWN  &none                        &none       &none           &kp UP    &rec_mac   &none       &none
+&kp LCTRL       &none         &kp INSERT    &kp HOME      &kp END        &none                        &none       &kp LEFT        &kp DOWN  &kp RIGHT  &none       &none
+&kp LEFT_SHIFT  &none         &none         &none         &none          &none  &none        &none    &none       &none           &kp DOWN  &none      &none       &none
+                                            &none         &none          &mo 1  &kp SPACE    &kp RET  &kp DEL     &mo 2           &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
